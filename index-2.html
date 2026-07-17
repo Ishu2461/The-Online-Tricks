@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheOnlineTricks — Verified Deals, Offers & Loot Alerts</title>
+<meta name="description" content="Hand-verified Amazon, Flipkart, and offer alerts. Real prices, real links, checked daily. Join 250+ smart shoppers on Telegram.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1729;
+    --navy-2:#1A2438;
+    --white:#fff;
+    --bg:#FAFAF8;
+    --gold:#D4A24C;
+    --gold-light:#F5A623;
+    --slate:#697086;
+    --line:#E8E6DF;
+    --card:#ffffff;
+    --green:#1B8A5A;
+    --radius:14px;
+    --display:'Playfair Display', serif;
+    --body:'Inter', sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--body); background:var(--bg); color:var(--navy); line-height:1.6; -webkit-font-smoothing:antialiased;}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  ul{list-style:none;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+
+  .trust-strip{background:var(--navy); color:#C9CEDB; font-size:12.5px; font-weight:600; padding:8px 0;}
+  .trust-strip .wrap{display:flex; justify-content:center; gap:36px; flex-wrap:wrap;}
+  .trust-strip span{display:flex; align-items:center; gap:6px;}
+  .trust-strip .check{color:var(--gold-light); font-weight:800;}
+
+  header{background:var(--white); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:30;}
+  .header-inner{display:flex; align-items:center; justify-content:space-between; padding:18px 24px;}
+  .logo{font-family:var(--display); font-weight:800; font-size:26px; display:flex; align-items:center; gap:8px;}
+  .logo .mark{
+    width:32px; height:32px; border-radius:8px; background:linear-gradient(135deg, var(--gold-light), var(--gold));
+    display:grid; place-items:center; color:var(--navy); font-family:var(--body); font-weight:800; font-size:15px;
+  }
+  .logo .accent{color:var(--gold);}
+  nav ul{display:flex; gap:30px;}
+  nav a{font-weight:600; font-size:14.5px; color:var(--navy); position:relative; padding:4px 0;}
+  nav a:hover{color:var(--gold);}
+  .cta-btn{
+    background:var(--navy); color:var(--white); font-weight:700; padding:11px 22px; border-radius:8px; font-size:14px;
+    display:flex; align-items:center; gap:8px; transition:.15s ease;
+  }
+  .cta-btn:hover{background:var(--gold); color:var(--navy);}
+
+  .hero{padding:70px 0 60px; text-align:center; position:relative; overflow:hidden;}
+  .hero::before{
+    content:''; position:absolute; top:-100px; left:50%; transform:translateX(-50%);
+    width:700px; height:400px; background:radial-gradient(ellipse, rgba(212,162,76,.14), transparent 70%);
+    z-index:0;
+  }
+  .hero-content{position:relative; z-index:1;}
+  .verified-badge{
+    display:inline-flex; align-items:center; gap:7px; background:#FFF8EC; border:1px solid #F0DDB0;
+    color:#95721F; font-size:12.5px; font-weight:700; padding:7px 16px; border-radius:30px; margin-bottom:22px;
+  }
+  .verified-badge .dot{width:6px; height:6px; border-radius:50%; background:var(--green);}
+  .hero h1{font-family:var(--display); font-weight:900; font-size:clamp(32px,5vw,52px); line-height:1.08; margin-bottom:18px;}
+  .hero h1 em{font-style:italic; color:var(--gold);}
+  .hero p{color:var(--slate); max-width:540px; margin:0 auto 32px; font-size:17px;}
+  .hero-actions{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:36px;}
+  .btn-primary{
+    background:var(--navy); color:var(--white); font-weight:700; padding:15px 30px; border-radius:8px; font-size:15px;
+    box-shadow:0 8px 20px rgba(15,23,41,.18); transition:.15s ease;
+  }
+  .btn-primary:hover{background:var(--gold); color:var(--navy);}
+  .btn-outline{border:2px solid var(--navy); font-weight:700; padding:13px 28px; border-radius:8px; font-size:15px; transition:.15s ease;}
+  .btn-outline:hover{background:var(--navy); color:var(--white);}
+
+  .stats-row{display:flex; justify-content:center; gap:56px; flex-wrap:wrap; position:relative; z-index:1;}
+  .stat{text-align:center;}
+  .stat strong{display:block; font-family:var(--display); font-weight:800; font-size:28px; color:var(--navy);}
+  .stat span{font-size:12.5px; color:var(--slate); font-weight:600; text-transform:uppercase; letter-spacing:.04em;}
+
+  .section{padding:64px 0;}
+  .section-label{
+    display:block; text-align:center; font-size:12.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:10px;
+  }
+  .section-title{font-family:var(--display); font-weight:800; font-size:clamp(24px,3vw,34px); margin-bottom:14px; text-align:center;}
+  .section-sub{text-align:center; color:var(--slate); max-width:480px; margin:0 auto 40px; font-size:15px;}
+
+  .deal-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;}
+  .deal-card{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
+    transition:.2s ease; position:relative;
+  }
+  .deal-card:hover{transform:translateY(-4px); box-shadow:0 16px 32px rgba(15,23,41,.1); border-color:transparent;}
+  .deal-thumb{aspect-ratio:4/3; background:var(--bg); position:relative; overflow:hidden;}
+  .deal-thumb img{width:100%; height:100%; object-fit:cover;}
+  .discount-pill{
+    position:absolute; top:12px; left:12px; background:var(--navy); color:var(--white); font-size:12px; font-weight:800;
+    padding:5px 11px; border-radius:20px;
+  }
+  .verified-pill{
+    position:absolute; top:12px; right:12px; background:var(--white); color:var(--green); font-size:11px; font-weight:800;
+    padding:5px 10px; border-radius:20px; display:flex; align-items:center; gap:4px; box-shadow:0 2px 8px rgba(0,0,0,.1);
+  }
+  .deal-body{padding:18px 20px 20px;}
+  .deal-cat{font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--gold); margin-bottom:8px; display:block;}
+  .deal-body h3{font-size:16px; font-weight:700; margin-bottom:10px; line-height:1.35;}
+  .rating{display:flex; align-items:center; gap:6px; margin-bottom:12px; font-size:12.5px; color:var(--slate);}
+  .rating .stars{color:var(--gold-light); letter-spacing:1px;}
+  .price-row{display:flex; align-items:baseline; gap:8px; margin-bottom:16px;}
+  .price-row .new{font-size:19px; font-weight:800; color:var(--navy);}
+  .price-row .old{font-size:13.5px; color:var(--slate); text-decoration:line-through;}
+  .price-row .off{font-size:12.5px; color:var(--green); font-weight:700;}
+  .deal-cta{
+    display:block; text-align:center; background:var(--navy); color:var(--white); font-weight:700; font-size:13.5px;
+    padding:11px; border-radius:8px; transition:.15s ease;
+  }
+  .deal-cta:hover{background:var(--gold); color:var(--navy);}
+  .deal-note{text-align:center; color:var(--slate); font-size:13px; margin-top:24px; font-style:italic;}
+
+  .trust-section{background:var(--white); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .trust-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:32px;}
+  .trust-card{text-align:center; padding:0 12px;}
+  .trust-icon{
+    width:56px; height:56px; border-radius:50%; background:#FFF8EC; display:grid; place-items:center;
+    margin:0 auto 18px; font-size:22px;
+  }
+  .trust-card h3{font-family:var(--display); font-weight:700; font-size:18px; margin-bottom:10px;}
+  .trust-card p{color:var(--slate); font-size:14px;}
+
+  .testi-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;}
+  .testi-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:24px;}
+  .testi-stars{color:var(--gold-light); margin-bottom:12px; letter-spacing:2px;}
+  .testi-card p{font-size:14.5px; color:var(--navy); margin-bottom:16px; line-height:1.65;}
+  .testi-user{display:flex; align-items:center; gap:10px;}
+  .testi-avatar{width:36px; height:36px; border-radius:50%; background:var(--navy); color:var(--white); display:grid; place-items:center; font-weight:700; font-size:13px;}
+  .testi-name{font-weight:700; font-size:13.5px;}
+  .testi-role{font-size:12px; color:var(--slate);}
+
+  .channels{background:var(--navy); color:var(--white); padding:64px 0; text-align:center; position:relative; overflow:hidden;}
+  .channels::before{
+    content:''; position:absolute; top:-120px; right:-80px; width:400px; height:400px;
+    background:radial-gradient(circle, rgba(212,162,76,.16), transparent 70%);
+  }
+  .channels-content{position:relative; z-index:1;}
+  .channels h2{font-family:var(--display); font-weight:800; font-size:clamp(26px,3.5vw,38px); margin-bottom:14px;}
+  .channels h2 em{font-style:italic; color:var(--gold-light);}
+  .channels p{color:#B8BECE; max-width:480px; margin:0 auto 32px; font-size:15.5px;}
+  .channel-links{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+  .channel-links a{
+    background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); color:var(--white);
+    font-weight:700; font-size:14px; padding:13px 26px; border-radius:8px; transition:.15s ease;
+  }
+  .channel-links a.primary{background:var(--gold-light); color:var(--navy); border-color:var(--gold-light);}
+  .channel-links a:hover{background:var(--gold-light); color:var(--navy); border-color:var(--gold-light);}
+
+  .faq-item{border-bottom:1px solid var(--line); padding:20px 0;}
+  .faq-q{display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-weight:700; font-size:15.5px;}
+  .faq-q .plus{font-size:20px; color:var(--gold); transition:.2s ease; flex:none; margin-left:16px;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:.25s ease; color:var(--slate); font-size:14.5px; line-height:1.7;}
+  .faq-item.open .faq-a{max-height:200px; margin-top:12px;}
+  .faq-wrap{max-width:680px; margin:0 auto;}
+
+  .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  .about-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:28px;}
+  .about-card h3{font-family:var(--display); font-weight:700; font-size:19px; margin-bottom:10px;}
+  .about-card p{color:var(--slate); font-size:14.5px;}
+  .about-card strong{color:var(--navy);}
+
+  footer{background:var(--navy); color:#B8BECE; padding:48px 0 24px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.1);}
+  .footer-logo{font-family:var(--display); font-weight:800; font-size:22px; color:var(--white); margin-bottom:10px;}
+  .footer-logo .accent{color:var(--gold-light);}
+  .footer-about p{font-size:13.5px; max-width:300px; color:#98A0B4;}
+  .footer-links{display:flex; gap:28px; flex-wrap:wrap;}
+  .footer-links a{font-size:13.5px; font-weight:600; color:#C9CEDB;}
+  .footer-links a:hover{color:var(--gold-light);}
+  .footer-bottom{padding-top:20px; font-size:12.5px; color:#7C8399; text-align:center;}
+
+  @media (max-width:900px){
+    .deal-grid, .trust-grid, .testi-grid{grid-template-columns:1fr;}
+    .about-grid{grid-template-columns:1fr;}
+    .stats-row{gap:32px;}
+  }
+  @media (max-width:760px){
+    nav{display:none;}
+    .cta-btn{display:none;}
+    .trust-strip .wrap{gap:16px; font-size:11px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="trust-strip">
+  <div class="wrap">
+    <span><span class="check">✓</span> Deals Verified Daily</span>
+    <span><span class="check">✓</span> 100% Genuine Links</span>
+    <span><span class="check">✓</span> 250+ Member Community</span>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner wrap">
+    <a href="#" class="logo"><span class="mark">OT</span>TheOnline<span class="accent">Tricks</span></a>
+    <nav>
+      <ul>
+        <li><a href="#deals">Deals</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <a href="#channels" class="cta-btn">Join Telegram →</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-content">
+      <span class="verified-badge"><span class="dot"></span> Every deal hand-checked before posting</span>
+      <h1>Deals worth trusting,<br><em>not just chasing.</em></h1>
+      <p>We verify prices, test links, and skip anything that looks fake — so you don't have to. Curated Amazon &amp; Flipkart offers, updated daily.</p>
+      <div class="hero-actions">
+        <a href="#channels" class="btn-primary">Join Free on Telegram</a>
+        <a href="#deals" class="btn-outline">Browse Today's Deals</a>
+      </div>
+      <div class="stats-row">
+        <div class="stat"><strong>250+</strong><span>Active Members</span></div>
+        <div class="stat"><strong>500+</strong><span>Deals Verified</span></div>
+        <div class="stat"><strong>Daily</strong><span>Fresh Updates</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="deals">
+    <div class="wrap">
+      <span class="section-label">Handpicked Today</span>
+      <h2 class="section-title">Today's Verified Deals</h2>
+      <p class="section-sub">Every link below is checked before it goes live. If a deal expires, we take it down — no dead links, no clickbait.</p>
+      <div class="deal-grid">
+        <div class="deal-card">
+          <div class="deal-thumb">
+            <img src="https://images.unsplash.com/photo-1585298723682-7115561c51b7?w=500&q=70" alt="Wireless headphones">
+            <span class="discount-pill">55% OFF</span>
+            <span class="verified-pill">✓ Verified</span>
+          </div>
+          <div class="deal-body">
+            <span class="deal-cat">Electronics</span>
+            <h3>Wireless Bluetooth Headphones — Noise Cancelling</h3>
+            <div class="rating"><span class="stars">★★★★★</span> 4.3 (2,140 ratings)</div>
+            <div class="price-row"><span class="new">₹899</span><span class="old">₹1,999</span><span class="off">Save ₹1,100</span></div>
+            <a href="#" class="deal-cta" rel="nofollow sponsored">Grab This Deal</a>
+          </div>
+        </div>
+        <div class="deal-card">
+          <div class="deal-thumb">
+            <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&q=70" alt="Air fryer kitchen appliance">
+            <span class="discount-pill">50% OFF</span>
+            <span class="verified-pill">✓ Verified</span>
+          </div>
+          <div class="deal-body">
+            <span class="deal-cat">Home &amp; Kitchen</span>
+            <h3>Digital Air Fryer, 4.5L Capacity</h3>
+            <div class="rating"><span class="stars">★★★★★</span> 4.5 (5,860 ratings)</div>
+            <div class="price-row"><span class="new">₹2,499</span><span class="old">₹4,999</span><span class="off">Save ₹2,500</span></div>
+            <a href="#" class="deal-cta" rel="nofollow sponsored">Grab This Deal</a>
+          </div>
+        </div>
+        <div class="deal-card">
+          <div class="deal-thumb">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=70" alt="Smart watch">
+            <span class="discount-pill">60% OFF</span>
+            <span class="verified-pill">✓ Verified</span>
+          </div>
+          <div class="deal-body">
+            <span class="deal-cat">Wearables</span>
+            <h3>Smartwatch with Heart Rate &amp; SpO2 Monitor</h3>
+            <div class="rating"><span class="stars">★★★★☆</span> 4.1 (1,320 ratings)</div>
+            <div class="price-row"><span class="new">₹1,199</span><span class="old">₹2,999</span><span class="off">Save ₹1,800</span></div>
+            <a href="#" class="deal-cta" rel="nofollow sponsored">Grab This Deal</a>
+          </div>
+        </div>
+      </div>
+      <p class="deal-note">Replace these sample cards with your real products, live prices, and Amazon affiliate links.</p>
+    </div>
+  </section>
+
+  <section class="section trust-section" id="how">
+    <div class="wrap">
+      <span class="section-label">Why Trust Us</span>
+      <h2 class="section-title">How We Verify Every Deal</h2>
+      <p class="section-sub">No auto-posting, no bots pulling random listings. Every deal goes through a manual check first.</p>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon">🔍</div>
+          <h3>Price History Checked</h3>
+          <p>We compare against historical pricing so a "discount" is an actual discount, not an inflated fake original price.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">🔗</div>
+          <h3>Live Link Testing</h3>
+          <p>Every link is opened and confirmed working right before publishing — if it's out of stock or expired, it doesn't go up.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">🛡️</div>
+          <h3>Seller Reputation Reviewed</h3>
+          <p>We check seller ratings and product reviews so you're not the first person finding out something's low quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <span class="section-label">Community Says</span>
+      <h2 class="section-title">Trusted by Real Shoppers</h2>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Every other deals channel is full of expired links. This is the first one where the price on the site actually matched what was posted."</p>
+          <div class="testi-user"><div class="testi-avatar">R</div><div><div class="testi-name">Rohit S.</div><div class="testi-role">Telegram Member</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Saved a lot on my Diwali shopping just by joining the channel and waiting a week. Genuinely useful, not spammy."</p>
+          <div class="testi-user"><div class="testi-avatar">P</div><div><div class="testi-name">Priya M.</div><div class="testi-role">Telegram Member</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★☆</div>
+          <p>"Good mix of deals, not just electronics. Appreciate that they take down posts once a deal is gone instead of leaving dead links up."</p>
+          <div class="testi-user"><div class="testi-avatar">A</div><div><div class="testi-name">Arjun K.</div><div class="testi-role">Telegram Member</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="channels" id="channels">
+    <div class="wrap channels-content">
+      <h2>Get deals <em>before</em> they trend.</h2>
+      <p>Join 250+ members getting real-time, verified loot alerts — completely free, no spam, leave anytime.</p>
+      <div class="channel-links">
+        <a href="#" class="primary" target="_blank" rel="noopener">Join Telegram Channel</a>
+        <a href="#" target="_blank" rel="noopener">WhatsApp Channel</a>
+        <a href="#" target="_blank" rel="noopener">YouTube</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap faq-wrap">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked</h2>
+      <div class="faq-item">
+        <div class="faq-q">Are these deals actually genuine? <span class="plus">+</span></div>
+        <div class="faq-a">Yes — every deal listed is manually checked for price accuracy and link validity before it's posted. We don't auto-scrape random listings.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you charge anything to join the channel? <span class="plus">+</span></div>
+        <div class="faq-a">No, joining our Telegram or WhatsApp channel is completely free. We earn a small commission from affiliate links when you make a purchase — at no extra cost to you.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How often are new deals posted? <span class="plus">+</span></div>
+        <div class="faq-a">We aim to post fresh, verified deals daily. Time-sensitive deals are flagged so you know to act quickly.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I suggest a deal or product? <span class="plus">+</span></div>
+        <div class="faq-a">Absolutely — message us on Telegram or email contact@theonlinetricks.com with suggestions.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <span class="section-label">Who We Are</span>
+      <h2 class="section-title">About TheOnlineTricks</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Our Mission</h3>
+          <p>TheOnlineTricks was built to cut through fake "70% off" listings and dead affiliate links. We personally verify every deal before it reaches you — because trust matters more than volume.</p>
+        </div>
+        <div class="about-card">
+          <h3>Get In Touch</h3>
+          <p>Questions, deal submissions, or brand partnerships — reach us at <strong>contact@theonlinetricks.com</strong> or message us directly on our Telegram channel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-about">
+        <div class="footer-logo">TheOnline<span class="accent">Tricks</span></div>
+        <p>Hand-verified deals and offers across Amazon, Flipkart, and more — checked daily, no dead links, no fake discounts.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+        <a href="mailto:contact@theonlinetricks.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 TheOnlineTricks. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
