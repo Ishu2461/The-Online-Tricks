@@ -68,7 +68,7 @@
   nav a{font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:.04em;}
   nav a:hover{color:var(--coral);}
   .header-actions{display:flex; align-items:center; gap:14px;}
-  .icon-btn{width:40px; height:40px; border-radius:50%; border:1px solid var(--line); display:grid; place-items:center; transition:.15s ease;}
+  .icon-btn{width:40px; height:40px; border-radius:50%; border:1px solid var(--line); display:grid; place-items:center; transition:.15s ease; background:none; cursor:pointer; font:inherit; color:var(--text); padding:0;}
   .icon-btn:hover{background:var(--charcoal); border-color:var(--charcoal); color:#fff;}
   .cta-btn{
     background:var(--coral); color:#fff; font-weight:700; padding:12px 26px; border-radius:30px; font-size:13.5px;
