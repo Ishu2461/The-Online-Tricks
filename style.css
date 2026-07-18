@@ -256,18 +256,41 @@
   .related-card h4{font-size:13px; font-weight:700; margin-bottom:6px; line-height:1.3;}
   .related-card .rc-price{font-size:13px; font-weight:800;}
 
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr; gap:32px;}
+    .hero-visual{max-width:420px; margin:0 auto;}
+  }
   @media (max-width:760px){
     .two-col, .value-grid, .options-grid{grid-template-columns:1fr;}
     .stats-row-alt{gap:30px;}
-  }
     .deal-grid{grid-template-columns:repeat(2,1fr);}
     .review-grid{grid-template-columns:1fr;}
     .promo-grid{grid-template-columns:1fr;}
     .footer-cols{grid-template-columns:1fr 1fr;}
   }
+  .menu-toggle{display:none; width:38px; height:38px; border-radius:50%; border:1px solid var(--line); background:none; cursor:pointer; align-items:center; justify-content:center;}
+  .menu-toggle span, .menu-toggle span::before, .menu-toggle span::after{
+    content:''; display:block; width:18px; height:2px; background:var(--text); position:relative; transition:.2s ease;
+  }
+  .menu-toggle span::before{position:absolute; top:-6px;}
+  .menu-toggle span::after{position:absolute; top:6px;}
+  .menu-toggle.open span{background:transparent;}
+  .menu-toggle.open span::before{transform:rotate(45deg); top:0;}
+  .menu-toggle.open span::after{transform:rotate(-45deg); top:0;}
+
   @media (max-width:760px){
-    nav{display:none;}
+    nav{
+      position:fixed; top:0; right:0; height:100vh; width:78%; max-width:300px; background:var(--cream);
+      transform:translateX(100%); transition:transform .25s ease; z-index:60; padding:90px 28px 28px;
+      box-shadow:-10px 0 30px rgba(15,23,41,.15); display:block;
+    }
+    nav.open{transform:translateX(0);}
+    nav ul{flex-direction:column; gap:6px; align-items:flex-start;}
+    nav a{display:block; padding:12px 0; font-size:15px; width:100%; border-bottom:1px solid var(--line);}
+    .nav-overlay{display:none; position:fixed; inset:0; background:rgba(15,23,41,.4); z-index:55;}
+    .nav-overlay.open{display:block;}
     .cta-btn{display:none;}
+    .menu-toggle{display:flex;}
     .announce .wrap{gap:18px; font-size:11px;}
     .footer-cols{grid-template-columns:1fr;}
     .footer-social-band .wrap{flex-direction:column; text-align:center;}
