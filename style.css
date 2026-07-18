@@ -34,7 +34,11 @@
 
   header{background:var(--cream); position:sticky; top:0; z-index:30; border-bottom:1px solid var(--line);}
   .header-inner{display:flex; align-items:center; justify-content:space-between; padding:20px 24px;}
-  .logo{font-family:var(--display); font-weight:800; font-size:26px; letter-spacing:-.01em; display:flex; align-items:center; gap:10px;}
+  .logo{
+    font-family:var(--display); font-weight:600; font-size:21px; letter-spacing:.12em; text-transform:uppercase;
+    display:flex; align-items:center; gap:0;
+  }
+  .logo .thin{font-weight:400;}
   .logo-svg{width:40px; height:40px; flex:none;}
   .logo .accent{color:var(--coral);}
   nav ul{display:flex; gap:32px;}
