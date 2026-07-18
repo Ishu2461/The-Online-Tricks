@@ -52,12 +52,29 @@ document.addEventListener('DOMContentLoaded', function () {
   var searchForm = document.querySelector('.search-panel form');
   var searchInput = document.querySelector('.search-panel input');
 
+  function closeSearch() {
+    if (searchPanel) searchPanel.classList.remove('open');
+  }
+
   if (searchToggle && searchPanel) {
-    searchToggle.addEventListener('click', function () {
+    searchToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
       searchPanel.classList.toggle('open');
       if (searchPanel.classList.contains('open') && searchInput) {
         searchInput.focus();
       }
+    });
+
+    // Close when clicking anywhere outside the search panel
+    document.addEventListener('click', function (e) {
+      if (searchPanel.classList.contains('open') && !searchPanel.contains(e.target) && e.target !== searchToggle) {
+        closeSearch();
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeSearch();
     });
   }
 
@@ -68,6 +85,8 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!query) return;
       var url = 'https://www.google.com/search?q=' + encodeURIComponent('site:theonlinetricks.com ' + query);
       window.open(url, '_blank');
+      closeSearch();
+      searchInput.value = '';
     });
   }
 });
