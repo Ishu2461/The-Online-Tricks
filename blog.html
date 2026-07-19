@@ -12,6 +12,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="icon" href="favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog — TheOnlineTricks</title>
@@ -27,9 +28,9 @@
     <a href="index.html" class="logo">The Online <span class="accent thin">Tricks</span></a>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="deals.html">Deals</a></li>
-        <li><a href="index.html#categories">Categories</a></li>
-        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
@@ -40,13 +41,13 @@
       <button class="menu-toggle" aria-label="Toggle menu"><span></span></button>
     </div>
   </div>
+  <div class="search-panel">
+    <form action="#" method="get">
+      <input type="text" placeholder="Search..." aria-label="Search">
+      <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
+    </form>
+  </div>
 </header>
-<div class="search-panel">
-  <form action="#" method="get">
-    <input type="text" placeholder="Search deals, reviews, guides..." aria-label="Search">
-    <button type="submit">Search</button>
-  </form>
-</div>
 <div class="nav-overlay"></div>
 
 <div class="page-hero">
@@ -55,14 +56,110 @@
   <p>Buying guides, comparisons, and practical how-to content — separate from our verified deal posts.</p>
 </div>
 
-<div class="page-container" style="text-align:center;">
-  <p style="color:var(--slate);">We're just getting this section started — new articles land here regularly. Check back soon, or follow our <a href="index.html#channels" class="inline-link">Telegram channel</a> to know the moment a new one goes up.</p>
-
-  <div class="cta-box">
-    <h2>Looking for today's deals instead?</h2>
-    <p>Our verified deal posts — with real pricing, pros &amp; cons, and honest recommendations — live on a separate page.</p>
-    <a href="deals.html" class="cta-link">Browse Deals</a>
+<div class="page-container" style="max-width:1100px;">
+  <div class="deal-grid" style="margin-top:10px;">
+    <div class="deal-card">
+      <a href="blog-smartphone-upgrade-signs.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=500&q=70" alt="5 Signs It's Actually Time to Upgrade Your Smartphone">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Smartphones</span>
+        <h3><a href="blog-smartphone-upgrade-signs.html">5 Signs It's Actually Time to Upgrade Your Smartphone</a></h3>
+        <a href="blog-smartphone-upgrade-signs.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
+    <div class="deal-card">
+      <a href="blog-spot-fake-discounts.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&q=70" alt="How to Spot a Fake Discount Before You Buy">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Shopping Tips</span>
+        <h3><a href="blog-spot-fake-discounts.html">How to Spot a Fake Discount Before You Buy</a></h3>
+        <a href="blog-spot-fake-discounts.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
+    <div class="deal-card">
+      <a href="blog-ssd-vs-hdd.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1591405351990-4726e331f141?w=500&q=70" alt="SSD vs HDD: Which Do You Actually Need in 2026">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Computing</span>
+        <h3><a href="blog-ssd-vs-hdd.html">SSD vs HDD: Which Do You Actually Need in 2026</a></h3>
+        <a href="blog-ssd-vs-hdd.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
+    <div class="deal-card">
+      <a href="blog-laptop-battery-life.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&q=70" alt="How to Extend Your Laptop's Battery Life">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Laptops</span>
+        <h3><a href="blog-laptop-battery-life.html">How to Extend Your Laptop's Battery Life</a></h3>
+        <a href="blog-laptop-battery-life.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
+    <div class="deal-card">
+      <a href="blog-wired-vs-wireless-earbuds.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&q=70" alt="Wired vs Wireless Earbuds: Which Should You Buy">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Audio</span>
+        <h3><a href="blog-wired-vs-wireless-earbuds.html">Wired vs Wireless Earbuds: Which Should You Buy</a></h3>
+        <a href="blog-wired-vs-wireless-earbuds.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
+    <div class="deal-card">
+      <a href="blog-warranty-vs-extended-warranty.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&q=70" alt="Warranty vs Extended Warranty: What's Worth Paying For">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Buying Guides</span>
+        <h3><a href="blog-warranty-vs-extended-warranty.html">Warranty vs Extended Warranty: What's Worth Paying For</a></h3>
+        <a href="blog-warranty-vs-extended-warranty.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
+    <div class="deal-card">
+      <a href="blog-buying-refurbished-electronics.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=500&q=70" alt="How to Safely Buy Refurbished Electronics Online">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Buying Guides</span>
+        <h3><a href="blog-buying-refurbished-electronics.html">How to Safely Buy Refurbished Electronics Online</a></h3>
+        <a href="blog-buying-refurbished-electronics.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
+    <div class="deal-card">
+      <a href="blog-smartphone-settings-to-change.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1533228100845-08145b01de14?w=500&q=70" alt="5 Smartphone Settings You Should Change Today">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Smartphones</span>
+        <h3><a href="blog-smartphone-settings-to-change.html">5 Smartphone Settings You Should Change Today</a></h3>
+        <a href="blog-smartphone-settings-to-change.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
+    <div class="deal-card">
+      <a href="blog-air-fryer-vs-otg.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1585237672814-8f28d5cbc7dd?w=500&q=70" alt="Air Fryer vs OTG: Which Kitchen Appliance Wins">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Kitchen Tech</span>
+        <h3><a href="blog-air-fryer-vs-otg.html">Air Fryer vs OTG: Which Kitchen Appliance Wins</a></h3>
+        <a href="blog-air-fryer-vs-otg.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
+    <div class="deal-card">
+      <a href="blog-protect-shopping-accounts-fraud.html" class="deal-thumb tinted">
+        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&q=70" alt="How to Protect Your Online Shopping Accounts From Fraud">
+      </a>
+      <div class="deal-body">
+        <span class="feed-cat" style="display:block; margin-bottom:6px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--coral-dark);">Online Safety</span>
+        <h3><a href="blog-protect-shopping-accounts-fraud.html">How to Protect Your Online Shopping Accounts From Fraud</a></h3>
+        <a href="blog-protect-shopping-accounts-fraud.html" class="deal-cta" style="margin-top:12px;">Read Article</a>
+      </div>
+    </div>
   </div>
+  <p class="deal-note">New articles are added regularly — join our <a href="index.html#channels" class="inline-link">Telegram channel</a> to know when a new one goes up.</p>
 </div>
 
 <footer>
@@ -85,7 +182,7 @@
   <div class="wrap">
     <div class="footer-cols">
       <div class="footer-brand">
-        <div class="logo">The Online <span class="accent thin">Tricks</span></div>
+        <a href="index.html" class="logo">The Online <span class="accent thin">Tricks</span></a>
         <p>India's fast-growing consumer tech network — hand-verified deals across Amazon, Flipkart, and more, checked daily. No dead links, no fake discounts.</p>
       </div>
       <div class="footer-col">
