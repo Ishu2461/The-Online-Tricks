@@ -12,6 +12,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="icon" href="favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Get In Touch — TheOnlineTricks</title>
@@ -27,17 +28,24 @@
     <a href="index.html" class="logo">The Online <span class="accent thin">Tricks</span></a>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="deals.html">Deals</a></li>
-        <li><a href="index.html#categories">Categories</a></li>
-        <li><a href="index.html#reviews">Reviews</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
     <div class="header-actions">
+      <button class="icon-btn search-toggle" aria-label="Search site" type="button"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
       <a href="index.html#channels" class="icon-btn" aria-label="Join channel"><svg class="icon"><use href="icons.svg#i-plane"/></svg></a>
       <a href="index.html#channels" class="cta-btn">Join Free</a>
       <button class="menu-toggle" aria-label="Toggle menu"><span></span></button>
     </div>
+  </div>
+  <div class="search-panel">
+    <form action="#" method="get">
+      <input type="text" placeholder="Search..." aria-label="Search">
+      <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
+    </form>
   </div>
 </header>
 <div class="nav-overlay"></div>
@@ -52,7 +60,8 @@
   <div class="two-col">
     <div class="info-card">
       <h2>Send a Message</h2>
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form class="contact-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+        <input type="hidden" name="_subject" value="New message from TheOnlineTricks contact form">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
 
@@ -73,7 +82,7 @@
 
         <button type="submit">Send Message</button>
       </form>
-      <p class="note-small">This form sends directly to our inbox — replace the form action with your own <a href="https://formspree.io" target="_blank" rel="noopener" class="inline-link">Formspree</a> endpoint (free tier works fine) so submissions actually reach you.</p>
+      <p class="note-small">This form sends directly to your inbox via Formspree.</p>
     </div>
 
     <div class="info-card">
@@ -109,14 +118,14 @@
   <div class="wrap">
     <div class="footer-cols">
       <div class="footer-brand">
-        <div class="logo">The Online <span class="accent thin">Tricks</span></div>
+        <a href="index.html" class="logo">The Online <span class="accent thin">Tricks</span></a>
         <p>India's fast-growing consumer tech network — hand-verified deals across Amazon, Flipkart, and more, checked daily. No dead links, no fake discounts.</p>
       </div>
       <div class="footer-col">
         <h5>About Us</h5>
         <ul>
           <li><a href="about.html">Our Story</a></li>
-          <li><a href="deals.html">Latest Deals</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
           <li><a href="advertise.html">Advertise</a></li>
         </ul>
       </div>
@@ -131,7 +140,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from TheOnlineTricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>
@@ -148,6 +158,7 @@
   </div>
 </footer>
 
+<button class="back-to-top" aria-label="Back to top"><svg class="icon"><use href="icons.svg#i-arrow-up"/></svg></button>
 <script src="main.js"></script>
 </body>
 </html>
