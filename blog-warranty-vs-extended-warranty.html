@@ -43,9 +43,10 @@
   </div>
   <div class="search-panel">
     <form action="#" method="get">
-      <input type="text" placeholder="Search..." aria-label="Search">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
       <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
     </form>
+    <div class="search-results"></div>
   </div>
 </header>
 
@@ -63,24 +64,23 @@
 </div>
 
 <div class="page-container">
-  <p>Extended warranties are one of the highest-margin products a retailer sells you at checkout — which doesn't mean they're never worth it, but it does mean they're worth understanding before you say yes.</p>
+  <p>Extended warranties are one of the highest-margin products a retailer sells you at checkout, which doesn't automatically mean they're never worth it — but it does mean they're worth actually understanding before you reflexively say yes at the counter.</p>
 
-    <h2>What Standard Warranty Already Covers</h2>
-  <p>Most electronics come with a 1-year manufacturer warranty covering defects — not accidental damage, not water damage, just genuine manufacturing faults. Know this baseline before evaluating whether an extension adds real value.</p>
+  <h2>What Standard Warranty Already Covers</h2>
+  <p>Most electronics come with a one-year manufacturer warranty covering genuine defects — not accidental damage, not water damage, just actual manufacturing faults. Knowing this baseline matters before you can properly evaluate whether an extension is actually adding real value or just charging you for peace of mind you didn't need.</p>
 
-  <h2>When Extended Warranties Make Sense</h2>
-  <p>For products with genuinely high failure rates or expensive repair costs relative to the extension price — certain appliances, for instance — the math can work out. The key question: what specifically does the extension cover that the standard warranty doesn't?</p>
+  <h2>When Extended Warranties Genuinely Make Sense</h2>
+  <p>For products with historically high failure rates, or where repair costs are expensive relative to the extension's price, the math can genuinely work out in your favor. The real question to ask is specific: what exactly does this extension cover that the standard warranty doesn't already handle?</p>
 
   <h2>When They're Usually Not Worth It</h2>
-  <p>For lower-cost electronics, or products with historically low failure rates, you're often paying a meaningful percentage of the item's price for protection against a fairly unlikely event. Read the actual failure-rate data if you can find it, not just the sales pitch.</p>
+  <p>For lower-cost electronics, or products with low historical failure rates, you're often paying a meaningful percentage of the item's price to insure against a fairly unlikely event. If you can find real failure-rate data rather than relying on the sales pitch at checkout, it's worth the extra two minutes.</p>
 
   <h2>Check the Fine Print on Exclusions</h2>
-  <p>Extended warranties often exclude exactly the damage people assume they cover — accidental drops, liquid damage, cosmetic issues. Read what's explicitly excluded, not just what's advertised as included.</p>
-
+  <p>Extended warranties often exclude exactly the kind of damage people assume they're covered for — accidental drops, liquid damage, cosmetic wear. Read what's explicitly excluded, not just what gets highlighted as included, because that's usually where the real gap sits.</p>
 
   <div class="insight-box">
     <span class="insight-label">Bottom Line</span>
-    <p>Don't buy an extended warranty reflexively at checkout. Ask specifically what it covers beyond the standard warranty, compare that to the price, and only say yes if the math genuinely works in your favor — not because declining felt awkward in the moment.</p>
+    <p>Don't buy an extended warranty reflexively just because declining feels awkward in the moment. Ask specifically what it covers beyond the standard warranty, weigh that against the price, and only say yes if the math genuinely favors you.</p>
   </div>
 
   <p class="note-small" style="margin-top:24px;"><a href="blog.html" class="inline-link">&larr; Back to all articles</a></p>
@@ -128,7 +128,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from TheOnlineTricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>

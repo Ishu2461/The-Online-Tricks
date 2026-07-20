@@ -43,9 +43,10 @@
   </div>
   <div class="search-panel">
     <form action="#" method="get">
-      <input type="text" placeholder="Search..." aria-label="Search">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
       <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
     </form>
+    <div class="search-results"></div>
   </div>
 </header>
 
@@ -63,24 +64,23 @@
 </div>
 
 <div class="page-container">
-  <p>This debate used to be close. It isn't anymore for most people — but there are still specific cases where a hard drive makes sense. Here's the honest breakdown.</p>
+  <p>This debate used to be genuinely close a decade ago. It really isn't anymore for most people buying a new laptop or desktop — but there are still a handful of specific situations where a traditional hard drive earns its place. Here's the honest, no-hype breakdown.</p>
 
-    <h2>Speed Difference Is No Longer Marginal</h2>
-  <p>A basic SATA SSD is roughly 5-10x faster than a traditional HDD for everyday tasks — boot times, app launches, file transfers. An NVMe SSD is faster still. If your laptop still runs on an HDD, this is the single most noticeable upgrade you can make for daily use.</p>
+  <h2>Speed Difference Is No Longer Marginal</h2>
+  <p>A basic SATA SSD is roughly five to ten times faster than a traditional HDD for everyday tasks — boot times, app launches, file transfers, the stuff you actually notice every single day. An NVMe SSD is faster again. If your laptop is still running on a spinning hard drive as its main drive, this is the single most noticeable upgrade you can make, full stop, more than any processor bump.</p>
 
   <h2>Where HDDs Still Win</h2>
-  <p>Pure storage cost per GB is where HDDs still have a real edge — if you're archiving large media libraries or backups you rarely access, a large HDD is genuinely more economical than an equivalent-capacity SSD.</p>
+  <p>Pure storage cost per gigabyte is where hard drives still have a genuine edge. If you're archiving large media libraries, old project files, or backups you rarely open, a large HDD is still meaningfully more economical than an equivalent-capacity SSD, and that gap hasn't closed as much as some people assume.</p>
 
-  <h2>Durability Considerations</h2>
-  <p>SSDs have no moving parts, making them more resistant to physical shock — a real advantage for laptops that travel. HDDs are more vulnerable to drops and vibration.</p>
+  <h2>Durability Is a Real Consideration Too</h2>
+  <p>SSDs have no moving parts, which makes them noticeably more resistant to physical shock — a real advantage if your laptop travels with you, gets tossed in a bag, or occasionally takes a tumble off a desk. Hard drives, with their spinning platters, are simply more vulnerable to drops and vibration in a way that isn't just theoretical.</p>
 
   <h2>The Practical Middle Ground</h2>
-  <p>Many people run a smaller SSD for their operating system and active programs, paired with a larger HDD for bulk storage — getting speed where it matters and cheap capacity where it doesn't.</p>
-
+  <p>A lot of people end up running a smaller SSD for their operating system and active programs, paired with a larger HDD for bulk storage. It's a sensible split that gets you speed exactly where it matters day to day, and cheap capacity exactly where it doesn't.</p>
 
   <div class="insight-box">
     <span class="insight-label">Bottom Line</span>
-    <p>For your primary drive, SSD isn't really a debate anymore — get one if you don't have one. HDDs still earn their place purely as cheap bulk backup storage, not as your main drive.</p>
+    <p>For your primary drive, this isn't really a debate anymore — get an SSD if you don't already have one. HDDs still earn their keep purely as cheap bulk or backup storage, not as the drive your operating system boots from.</p>
   </div>
 
   <p class="note-small" style="margin-top:24px;"><a href="blog.html" class="inline-link">&larr; Back to all articles</a></p>
@@ -128,7 +128,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from TheOnlineTricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>

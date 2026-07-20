@@ -43,9 +43,10 @@
   </div>
   <div class="search-panel">
     <form action="#" method="get">
-      <input type="text" placeholder="Search..." aria-label="Search">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
       <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
     </form>
+    <div class="search-results"></div>
   </div>
 </header>
 
@@ -63,24 +64,23 @@
 </div>
 
 <div class="page-container">
-  <p>Most online shopping fraud isn't sophisticated hacking — it's exploiting weak passwords, reused credentials, and a moment of inattention. A few habits close most of the real risk.</p>
+  <p>Most online shopping fraud isn't sophisticated hacking at all — it's exploiting weak, reused passwords and a single moment of inattention. A handful of honest habits close most of the real, everyday risk without requiring any technical background whatsoever.</p>
 
-    <h2>Use Unique Passwords Per Site, Genuinely</h2>
-  <p>Reused passwords are the single biggest reason one data breach turns into multiple compromised accounts. A password manager makes unique passwords per site painless rather than a chore.</p>
+  <h2>Use Unique Passwords Per Site, Genuinely</h2>
+  <p>Reused passwords are the single biggest reason one data breach quietly turns into several compromised accounts at once. A password manager makes unique passwords per site completely painless rather than the chore it sounds like, and it's worth setting up once and forgetting about.</p>
 
   <h2>Turn On Two-Factor Authentication Everywhere It's Offered</h2>
-  <p>This single step blocks the vast majority of account takeover attempts, even if your password does leak somewhere. Prioritize enabling it on your email and payment-linked shopping accounts first.</p>
+  <p>This one step alone blocks the vast majority of account takeover attempts, even if your password does leak somewhere down the line. Prioritize enabling it on your email and any payment-linked shopping accounts first, since those are the ones with the most to lose.</p>
 
-  <h2>Never Save Full Card Details on Every Site You Shop On</h2>
-  <p>Convenience has a real security cost — the more places your card is stored, the more places a breach can expose it. Consider saving card details only on the 2-3 platforms you use most, and using guest checkout elsewhere.</p>
+  <h2>Don't Save Full Card Details on Every Site You Use</h2>
+  <p>Convenience carries a real security cost here — the more places your card details are stored, the more places a future breach can expose them from. Consider saving card details only on the two or three platforms you genuinely shop on most, and using guest checkout everywhere else.</p>
 
-  <h2>Verify Before Clicking 'Order Confirmation' Links in Email</h2>
-  <p>Phishing emails mimicking shipping or order confirmations are extremely common around sale seasons. When in doubt, go directly to the retailer's app or site instead of clicking the email link.</p>
-
+  <h2>Verify Before Clicking Order Confirmation Links in Email</h2>
+  <p>Phishing emails mimicking shipping or order confirmations are extremely common, especially around big sale seasons when everyone's inbox is already full of real order updates. When in doubt, go directly to the retailer's app or site instead of trusting the link in the email itself.</p>
 
   <div class="insight-box">
     <span class="insight-label">Bottom Line</span>
-    <p>None of this requires technical expertise — unique passwords, two-factor authentication, and a healthy default suspicion of unexpected order emails cover most of the real-world fraud risk in everyday online shopping.</p>
+    <p>None of this requires any technical expertise. Unique passwords, two-factor authentication, and a healthy default suspicion of unexpected order emails cover most of the real-world fraud risk in everyday online shopping.</p>
   </div>
 
   <p class="note-small" style="margin-top:24px;"><a href="blog.html" class="inline-link">&larr; Back to all articles</a></p>
@@ -128,7 +128,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from TheOnlineTricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>

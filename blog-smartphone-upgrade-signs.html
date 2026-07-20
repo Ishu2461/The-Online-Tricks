@@ -43,9 +43,10 @@
   </div>
   <div class="search-panel">
     <form action="#" method="get">
-      <input type="text" placeholder="Search..." aria-label="Search">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
       <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
     </form>
+    <div class="search-results"></div>
   </div>
 </header>
 
@@ -63,24 +64,23 @@
 </div>
 
 <div class="page-container">
-  <p>Phone brands want you upgrading every year, but most people can comfortably stretch a device 3-4 years. Here's how to tell if your next upgrade is genuinely necessary, or if you're just being marketed to.</p>
+  <p>Phone brands want you upgrading every year, and honestly, most of us fall for it at least once. But if you actually track how phones age, the truth is most people can comfortably stretch a device three to four years before a new one is a real necessity rather than a nice-to-have. The tricky part is telling the difference between "I want this" and "I need this." Here's how we actually make that call.</p>
 
-    <h2>Battery Health Below 80%</h2>
-  <p>If your phone needs a top-up by early afternoon despite normal use, and you've had it 2+ years, this is usually a battery degradation issue — not a reason to buy new hardware. Check your battery health percentage in settings first; a replacement battery is often a fraction of a new phone's cost.</p>
+  <h2>Battery Health Below 80%</h2>
+  <p>If your phone needs a top-up by early afternoon despite fairly normal use, and you've had it two-plus years, that's almost always a battery degradation issue, not a sign the whole device is done. Check your battery health percentage in settings before you do anything else. In most cases, a replacement battery costs a small fraction of a new phone, and it can genuinely make a two-year-old device feel new again for daily use.</p>
 
   <h2>Security Updates Have Stopped</h2>
-  <p>This is the one non-negotiable reason to upgrade. Once a manufacturer stops shipping security patches, you're exposed to known vulnerabilities indefinitely. Check your phone model's update end-of-life date — most brands publish this, and it's usually 3-5 years from release.</p>
+  <p>This is the one truly non-negotiable reason to upgrade. Once a manufacturer stops shipping security patches, you're exposed to known vulnerabilities indefinitely, and there's no workaround for that. The good news is update windows have genuinely improved lately — recent flagships from Google and Samsung now commit to seven years of updates, up from the three-to-five-year norm just a few years back. Check your specific model's end-of-life date rather than assuming; brands publish this, and it varies more than people expect.</p>
 
   <h2>Apps Crash or Lag Consistently</h2>
-  <p>Occasional lag is normal; apps consistently crashing or the keyboard stuttering while typing usually means you're hitting a RAM ceiling that newer app updates have outgrown. This is a genuine performance reason, not a marketing one.</p>
+  <p>Occasional lag happens to every phone. But apps consistently crashing, or the keyboard stuttering mid-sentence, usually means you're hitting a RAM ceiling that newer app updates have simply outgrown. That's a real performance wall, not a marketing angle designed to nudge you toward the newest release.</p>
 
   <h2>Camera No Longer Meets Your Needs</h2>
-  <p>If you've started relying on a separate camera or feel genuinely limited in low light, that's a legitimate use-case reason. If you're just seeing better camera specs in ads, that's marketing, not a need.</p>
-
+  <p>If you've caught yourself reaching for a separate camera, or you're genuinely frustrated by low-light shots, that's a legitimate use-case reason to consider upgrading. If it's more that you saw a spec sheet with a bigger number on it, that's marketing doing its job, not an actual need showing up in your daily life.</p>
 
   <div class="insight-box">
     <span class="insight-label">Bottom Line</span>
-    <p>If you're hitting 2 or more of these — especially the security updates point — it's a reasonable time to upgrade. If it's really just about wanting the newest model, that's fine too, just go in knowing it's a want, not a need, and budget accordingly.</p>
+    <p>Hit two or more of these — especially the security-update one — and upgrading is a reasonable, defensible call. If it's really just about wanting the newest model, that's completely fine too. Just go in knowing that's what it is, and budget for a want rather than convincing yourself it's a need.</p>
   </div>
 
   <p class="note-small" style="margin-top:24px;"><a href="blog.html" class="inline-link">&larr; Back to all articles</a></p>
@@ -128,7 +128,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from TheOnlineTricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>

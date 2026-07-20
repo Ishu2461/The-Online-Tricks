@@ -43,9 +43,10 @@
   </div>
   <div class="search-panel">
     <form action="#" method="get">
-      <input type="text" placeholder="Search..." aria-label="Search">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
       <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
     </form>
+    <div class="search-results"></div>
   </div>
 </header>
 
@@ -63,24 +64,23 @@
 </div>
 
 <div class="page-container">
-  <p>"70% off" only means something if the original price was real. Inflated "was" prices are one of the most common tricks in online retail, and they're easy to spot once you know what to check.</p>
+  <p>"70% off" only means something if the original price was ever real. Inflated "was" prices are one of the oldest tricks in online retail, and once you know what to actually check, they're pretty easy to catch — it just takes a habit most shoppers never build.</p>
 
-    <h2>Check Price History Tools</h2>
-  <p>Browser extensions and sites that track historical pricing on major retailers let you see the actual price trend over months, not just the number shown today. If a product has genuinely sat at the 'discounted' price for weeks with an occasional price spike right before a 'sale,' that's your answer.</p>
+  <h2>Check Price History Tools</h2>
+  <p>Browser extensions and price-tracking sites that log historical pricing on major retailers let you see the real trend over weeks or months, not just today's snapshot. If a product has genuinely sat at the "discounted" price for a while, with only the occasional spike right before a "sale" begins, that spike is your answer — the discount is cosmetic, not real.</p>
 
-  <h2>Be Wary of Round, Suspiciously High MRPs</h2>
-  <p>A product with a listed MRP that no retailer has ever actually charged is a red flag — this is sometimes called a 'phantom MRP,' set artificially high purely to make the 'discount' look bigger.</p>
+  <h2>Be Wary of Suspiciously Round, High MRPs</h2>
+  <p>A listed MRP that no retailer has ever actually charged is a real red flag. This is sometimes called a phantom MRP — a number set artificially high purely so the eventual "discount" looks dramatic on paper, even though nobody was ever meant to pay that original figure.</p>
 
   <h2>Compare Across Multiple Retailers</h2>
-  <p>If the same product is meaningfully cheaper elsewhere without any 'sale' framing at all, the discounted price you're looking at might just be closer to the real market rate — not a special deal.</p>
+  <p>If the exact same product is meaningfully cheaper somewhere else with zero "sale" framing attached to it at all, the price you're looking at probably isn't a special deal — it's just closer to the actual market rate, dressed up to look like a bargain.</p>
 
-  <h2>Watch for Repeating 'Flash Sales'</h2>
-  <p>If the same 'limited time' discount reappears every few weeks, it's not actually limited — it's just the regular promotional price, dressed up with urgency language.</p>
-
+  <h2>Watch for Repeating "Flash Sales"</h2>
+  <p>If the same "limited time" discount keeps reappearing every few weeks like clockwork, it isn't limited at all. It's just the regular promotional price, wrapped in urgency language designed to make you feel like you'd be missing out by waiting.</p>
 
   <div class="insight-box">
     <span class="insight-label">Bottom Line</span>
-    <p>A genuine discount is verifiable against real price history, not just the number printed next to a strikethrough. Two minutes of checking before checkout saves you from the illusion of savings that isn't really there.</p>
+    <p>A genuine discount is one you can verify against real price history, not just a strikethrough number next to a new one. Two minutes of checking before checkout is usually enough to tell the difference between an actual saving and the illusion of one.</p>
   </div>
 
   <p class="note-small" style="margin-top:24px;"><a href="blog.html" class="inline-link">&larr; Back to all articles</a></p>
@@ -128,7 +128,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from TheOnlineTricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>

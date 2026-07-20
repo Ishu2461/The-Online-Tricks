@@ -43,9 +43,10 @@
   </div>
   <div class="search-panel">
     <form action="#" method="get">
-      <input type="text" placeholder="Search..." aria-label="Search">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
       <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
     </form>
+    <div class="search-results"></div>
   </div>
 </header>
 
@@ -63,24 +64,23 @@
 </div>
 
 <div class="page-container">
-  <p>Both promise crispy results without deep frying, and both have loyal fans — but they're better suited to different kinds of cooking, not directly interchangeable.</p>
+  <p>Both promise crispy results without deep frying, and both have genuinely loyal fans in their own right. But they're actually better suited to different kinds of cooking rather than being directly interchangeable, which is where most buying confusion comes from.</p>
 
-    <h2>How They Actually Work</h2>
-  <p>An air fryer uses rapid, concentrated hot air circulation in a compact chamber — fast and efficient for smaller batches. An OTG (oven-toaster-griller) is a more traditional oven in miniature, heating a larger cavity more evenly but generally taking longer.</p>
+  <h2>How They Actually Work</h2>
+  <p>An air fryer uses rapid, concentrated hot air circulation in a compact chamber, which makes it fast and efficient for smaller batches. An OTG, or oven-toaster-griller, is more of a traditional oven in miniature — it heats a larger cavity more evenly, but it generally takes longer to get there.</p>
 
   <h2>Where Air Fryers Win</h2>
-  <p>Speed and convenience for single-serve to small-family portions — reheating, frozen snacks, and quick weeknight cooking. Preheat time is minimal and cleanup is typically easier.</p>
+  <p>Speed and convenience for single-serve to small-family portions is where the air fryer clearly pulls ahead — reheating leftovers, frozen snacks, quick weeknight cooking when you don't want to wait. Preheat time is minimal, and cleanup is typically a lot easier than it is with a full oven cavity.</p>
 
   <h2>Where OTGs Win</h2>
-  <p>Baking is the clear OTG advantage — cakes, larger batches of cookies, and dishes needing even, gentle heat across a bigger cooking surface. Air fryers struggle with anything that needs to rise evenly in a large format.</p>
+  <p>Baking is the clear OTG advantage, and it isn't close. Cakes, larger batches of cookies, anything that needs to rise evenly across a bigger surface — an air fryer genuinely struggles with that in a way an OTG simply doesn't, because of how the heat is distributed.</p>
 
   <h2>Can You Justify Owning Both?</h2>
-  <p>If your cooking regularly spans both quick snacks and actual baking, they're genuinely complementary rather than redundant — many households end up using both for different jobs rather than picking one over the other.</p>
-
+  <p>If your cooking regularly spans both quick snacks and actual baking, the two appliances are genuinely complementary rather than redundant. A lot of households end up using both for different jobs entirely, rather than picking one and forcing it to do everything.</p>
 
   <div class="insight-box">
     <span class="insight-label">Bottom Line</span>
-    <p>If you're choosing one: air fryer for quick, crispy, small-batch cooking; OTG if baking is a real part of your routine. If budget allows and you do both regularly, they solve different problems well enough to justify owning each.</p>
+    <p>Choosing just one: go air fryer for quick, crispy, small-batch cooking, and OTG if baking is a real, regular part of your routine. If budget allows and you genuinely do both often, owning each solves a different problem well enough to justify the space.</p>
   </div>
 
   <p class="note-small" style="margin-top:24px;"><a href="blog.html" class="inline-link">&larr; Back to all articles</a></p>
@@ -128,7 +128,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from TheOnlineTricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>

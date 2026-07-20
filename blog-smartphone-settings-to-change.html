@@ -43,9 +43,10 @@
   </div>
   <div class="search-panel">
     <form action="#" method="get">
-      <input type="text" placeholder="Search..." aria-label="Search">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
       <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
     </form>
+    <div class="search-results"></div>
   </div>
 </header>
 
@@ -63,24 +64,23 @@
 </div>
 
 <div class="page-container">
-  <p>Most phones ship with defaults tuned for the average user, not for your specific priorities. A few small setting changes noticeably improve battery life, privacy, and daily usability.</p>
+  <p>Most phones ship with defaults tuned for the average user, not for your specific priorities. A handful of small setting changes can noticeably improve battery life, privacy, and everyday usability — and none of them cost anything or take more than a few minutes.</p>
 
-    <h2>Turn Off Auto-Play Videos in Apps</h2>
-  <p>Social media and news apps often auto-play video by default, which quietly burns both battery and mobile data. This is usually a one-toggle fix buried in each app's settings.</p>
+  <h2>Turn Off Auto-Play Videos in Apps</h2>
+  <p>Social media and news apps often auto-play video by default, which quietly burns through both battery and mobile data without you asking for it. This is usually a single toggle buried somewhere in each app's settings, and switching it off is one of the easiest wins available.</p>
 
   <h2>Review App Permissions Periodically</h2>
-  <p>Apps accumulate permission creep over time — location access for apps that don't need it running in the background is both a privacy and battery concern. A quarterly permissions review is worth the ten minutes it takes.</p>
+  <p>Apps accumulate permission creep over time — location access for an app that has no real reason to need it, running quietly in the background, is both a privacy concern and a genuine battery drain. A quarterly permissions review is worth the ten minutes it actually takes.</p>
 
   <h2>Disable Non-Essential Push Notifications</h2>
-  <p>Notification overload isn't just annoying — each one wakes your screen and pulls a small amount of battery. Trimming this down to what actually matters improves both focus and battery life.</p>
+  <p>Notification overload isn't just annoying to live with day to day. Each one wakes your screen and pulls a small amount of battery every single time. Trimming this down to only what genuinely matters improves both your focus and your battery life in a way that compounds over a full day.</p>
 
-  <h2>Set Up Find My Device / Find My Phone Properly</h2>
-  <p>This is the setting people skip until they actually need it. Confirm it's active and correctly linked to your account now, not after your phone is lost or stolen.</p>
-
+  <h2>Set Up Find My Device Properly, Now</h2>
+  <p>This is the one setting people always skip until the exact moment they actually need it. Confirm it's active and correctly linked to your account today, not after your phone is already lost or stolen and it's too late to set up.</p>
 
   <div class="insight-box">
     <span class="insight-label">Bottom Line</span>
-    <p>None of these changes cost anything or require new hardware — just ten minutes in your settings menu for a meaningfully better daily experience on the phone you already have.</p>
+    <p>None of these changes require new hardware or cost anything at all — just ten honest minutes in your settings menu for a meaningfully better daily experience on the phone you already own.</p>
   </div>
 
   <p class="note-small" style="margin-top:24px;"><a href="blog.html" class="inline-link">&larr; Back to all articles</a></p>
@@ -128,7 +128,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from TheOnlineTricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>
