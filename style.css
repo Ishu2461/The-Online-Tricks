@@ -67,6 +67,27 @@
   .search-result-item:hover{background:var(--blush);}
   .search-result-item .sr-tag{font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--coral-dark); flex:none;}
   .search-empty{padding:11px 14px; font-size:13.5px; color:var(--slate);}
+
+  /* Author byline */
+  .author-byline{
+    display:flex; align-items:center; gap:12px; justify-content:center; margin-top:20px; padding-top:20px; border-top:1px solid var(--line);
+  }
+  .author-byline img{width:42px; height:42px; border-radius:50%; object-fit:cover; flex:none;}
+  .author-byline .ab-text{text-align:left; font-size:13px;}
+  .author-byline .ab-name{font-weight:700; color:var(--text);}
+  .author-byline .ab-role{color:var(--slate); font-size:12px;}
+  .author-byline a{color:inherit;}
+  .author-byline a:hover .ab-name{color:var(--coral-dark);}
+
+  .author-card{
+    display:flex; align-items:center; gap:20px; background:#fff; border:1px solid var(--line); border-radius:16px;
+    padding:26px; box-shadow:0 8px 20px rgba(15,23,41,.05); margin-top:20px;
+  }
+  .author-card img{width:88px; height:88px; border-radius:50%; object-fit:cover; flex:none;}
+  .author-card h3{font-family:var(--display); font-weight:700; font-size:18px; margin-bottom:4px;}
+  .author-card .role{color:var(--coral-dark); font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; margin-bottom:8px;}
+  .author-card p{font-size:13.5px; color:var(--slate); margin:0;}
+  @media (max-width:600px){ .author-card{flex-direction:column; text-align:center;} }
   header{position:sticky; top:0; z-index:100; background:var(--cream); border-bottom:1px solid var(--line);}
   .header-inner{display:flex; align-items:center; justify-content:space-between; padding:20px 24px;}
   .logo{

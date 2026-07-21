@@ -12,10 +12,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="icon" href="favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us — TheOnlineTricks</title>
-<meta name="description" content="Learn how TheOnlineTricks verifies every deal before posting — our story, our process, and what we stand for.">
+<title>About Us — The Online Tricks</title>
+<meta name="description" content="Learn how The Online Tricks verifies every deal before posting — our story, our process, and what we stand for.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -27,17 +28,25 @@
     <a href="index.html" class="logo">The Online <span class="accent thin">Tricks</span></a>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="deals.html">Deals</a></li>
-        <li><a href="index.html#categories">Categories</a></li>
-        <li><a href="index.html#reviews">Reviews</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
     <div class="header-actions">
+      <button class="icon-btn search-toggle" aria-label="Search site" type="button"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
       <a href="index.html#channels" class="icon-btn" aria-label="Join channel"><svg class="icon"><use href="icons.svg#i-plane"/></svg></a>
       <a href="index.html#channels" class="cta-btn">Join Free</a>
       <button class="menu-toggle" aria-label="Toggle menu"><span></span></button>
     </div>
+  </div>
+  <div class="search-panel">
+    <form action="#" method="get">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
+      <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
+    </form>
+    <div class="search-results"></div>
   </div>
 </header>
 <div class="nav-overlay"></div>
@@ -45,12 +54,12 @@
 <div class="page-hero">
   <span>Our Story</span>
   <h1>Deals you don't have to double-check.</h1>
-  <p>Why we started TheOnlineTricks, and what we actually do before a deal reaches you.</p>
+  <p>Why we started The Online Tricks, and what we actually do before a deal reaches you.</p>
 </div>
 
 <div class="page-container">
   <h2>Why We Started</h2>
-  <p>TheOnlineTricks began as a simple idea: most "deal" content online is either fake discounts, expired links, or bots scraping random listings with no real check behind them. We wanted a place where a posted deal actually means what it says — the price is real, the link works, and the product is worth buying.</p>
+  <p>The Online Tricks began as a simple idea: most "deal" content online is either fake discounts, expired links, or bots scraping random listings with no real check behind them. We wanted a place where a posted deal actually means what it says — the price is real, the link works, and the product is worth buying.</p>
 
   <h2>What We Do</h2>
   <p>Every day, we track pricing across Amazon, Flipkart, and other online retailers, and manually verify each deal before it's shared — on our website, our Telegram channel, and our other social platforms. If a deal expires or a link breaks, we take it down rather than leave it live for the sake of content.</p>
@@ -71,6 +80,16 @@
       <svg class="vicon"><use href="icons.svg#i-clock"/></svg>
       <h3>Fast Updates</h3>
       <p>Real-time alerts so you catch deals before they're gone.</p>
+    </div>
+  </div>
+
+  <h2 id="author">Who Verifies Our Deals</h2>
+  <div class="author-card">
+    <img src="author.jpg" alt="Amulya Tripathi">
+    <div>
+      <h3>Amulya Tripathi</h3>
+      <div class="role">Mechanical Engineer &middot; Deal Reviewer</div>
+      <p>Amulya checks pricing, tests links, and reviews product specs before anything goes live on The Online Tricks. Background in mechanical engineering means a closer look at build quality and real-world durability claims, not just marketing copy.</p>
     </div>
   </div>
 
@@ -103,14 +122,14 @@
   <div class="wrap">
     <div class="footer-cols">
       <div class="footer-brand">
-        <div class="logo">The Online <span class="accent thin">Tricks</span></div>
+        <a href="index.html" class="logo">The Online <span class="accent thin">Tricks</span></a>
         <p>India's fast-growing consumer tech network — hand-verified deals across Amazon, Flipkart, and more, checked daily. No dead links, no fake discounts.</p>
       </div>
       <div class="footer-col">
         <h5>About Us</h5>
         <ul>
           <li><a href="about.html">Our Story</a></li>
-          <li><a href="deals.html">Latest Deals</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
           <li><a href="advertise.html">Advertise</a></li>
         </ul>
       </div>
@@ -125,7 +144,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from The Online Tricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>
@@ -133,7 +153,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 TheOnlineTricks. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</span>
+      <span>© 2026 The Online Tricks. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</span>
       <div class="trust-badges">
         <span><svg class="icon"><use href="icons.svg#i-shield"/></svg> Verified Daily</span>
         <span><svg class="icon"><use href="icons.svg#i-lock"/></svg> Secure Links</span>
@@ -142,6 +162,7 @@
   </div>
 </footer>
 
+<button class="back-to-top" aria-label="Back to top"><svg class="icon"><use href="icons.svg#i-arrow-up"/></svg></button>
 <script src="main.js"></script>
 </body>
 </html>

@@ -12,10 +12,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="icon" href="favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms &amp; Conditions — TheOnlineTricks</title>
-<meta name="description" content="Terms and conditions for using TheOnlineTricks, covering deal accuracy, affiliate links, and site use.">
+<title>Terms &amp; Conditions — The Online Tricks</title>
+<meta name="description" content="Terms and conditions for using The Online Tricks, covering deal accuracy, affiliate links, and site use.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -27,10 +28,10 @@
     <a href="index.html" class="logo">The Online <span class="accent thin">Tricks</span></a>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="deals.html">Deals</a></li>
-        <li><a href="index.html#categories">Categories</a></li>
-        <li><a href="index.html#reviews">Reviews</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
     <div class="header-actions">
@@ -40,7 +41,15 @@
       <button class="menu-toggle" aria-label="Toggle menu"><span></span></button>
     </div>
   </div>
+  <div class="search-panel">
+    <form action="#" method="get">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
+      <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
+    </form>
+    <div class="search-results"></div>
+  </div>
 </header>
+<div class="nav-overlay"></div>
 
 <div class="page-hero">
   <span>Legal</span>
@@ -60,10 +69,10 @@
   <p>Our Site contains affiliate links. When you click through and make a purchase, we may earn a commission at no extra cost to you. See our <a href="affiliate-disclosure.html" class="inline-link">Affiliate Disclosure</a> for full details. We do not control, and are not responsible for, the content, policies, or practices of third-party sites linked from our Site.</p>
 
   <h2>Intellectual Property</h2>
-  <p>All original content on this Site — including text, layout, and design — is owned by TheOnlineTricks unless otherwise stated. Product images and specifications referenced in our posts remain the property of their respective brands and retailers.</p>
+  <p>All original content on this Site — including text, layout, and design — is owned by The Online Tricks unless otherwise stated. Product images and specifications referenced in our posts remain the property of their respective brands and retailers.</p>
 
   <h2>Limitation of Liability</h2>
-  <p>TheOnlineTricks is not liable for any loss or damage arising from your use of the Site, reliance on posted deal information, or transactions completed on third-party retailer websites. Purchases are made directly with the retailer, subject to their own terms, refund, and return policies.</p>
+  <p>The Online Tricks is not liable for any loss or damage arising from your use of the Site, reliance on posted deal information, or transactions completed on third-party retailer websites. Purchases are made directly with the retailer, subject to their own terms, refund, and return policies.</p>
 
   <h2>Changes to These Terms</h2>
   <p>We may update these Terms &amp; Conditions from time to time. Continued use of the Site after changes are posted constitutes acceptance of the updated terms.</p>
@@ -97,7 +106,7 @@
   <div class="wrap">
     <div class="footer-cols">
       <div class="footer-brand">
-        <div class="logo">The Online <span class="accent thin">Tricks</span></div>
+        <a href="index.html" class="logo">The Online <span class="accent thin">Tricks</span></a>
         <p>India's fast-growing consumer tech network — hand-verified deals across Amazon, Flipkart, and more, checked daily. No dead links, no fake discounts.</p>
       </div>
       <div class="footer-col">
@@ -119,7 +128,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from The Online Tricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>
@@ -127,7 +137,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 TheOnlineTricks. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</span>
+      <span>© 2026 The Online Tricks. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</span>
       <div class="trust-badges">
         <span><svg class="icon"><use href="icons.svg#i-shield"/></svg> Verified Daily</span>
         <span><svg class="icon"><use href="icons.svg#i-lock"/></svg> Secure Links</span>

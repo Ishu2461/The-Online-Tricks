@@ -15,8 +15,8 @@
 <link rel="icon" href="favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog — TheOnlineTricks</title>
-<meta name="description" content="Buying guides, comparisons, and practical how-to articles from TheOnlineTricks.">
+<title>Blog — The Online Tricks</title>
+<meta name="description" content="Buying guides, comparisons, and practical how-to articles from The Online Tricks.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -43,16 +43,17 @@
   </div>
   <div class="search-panel">
     <form action="#" method="get">
-      <input type="text" placeholder="Search..." aria-label="Search">
+      <input type="text" placeholder="Search deals, guides, categories..." aria-label="Search" autocomplete="off">
       <button type="submit" aria-label="Submit search"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
     </form>
+    <div class="search-results"></div>
   </div>
 </header>
 <div class="nav-overlay"></div>
 
 <div class="page-hero">
   <span>Guides &amp; Insights</span>
-  <h1>The TheOnlineTricks Blog</h1>
+  <h1>The The Online Tricks Blog</h1>
   <p>Buying guides, comparisons, and practical how-to content — separate from our verified deal posts.</p>
 </div>
 
@@ -204,7 +205,8 @@
       <div class="newsletter-box">
         <h5>Sign Up For Deal Alerts</h5>
         <p>Get the best deals dropped straight to your inbox, weekly.</p>
-        <form class="newsletter-form" onsubmit="return false;">
+        <form class="newsletter-form" action="https://formspree.io/f/mjgnrbkg" method="POST">
+          <input type="hidden" name="_subject" value="New newsletter signup from The Online Tricks">
           <input type="email" placeholder="you@email.com" aria-label="Email address" required>
           <button type="submit">Join</button>
         </form>
@@ -212,7 +214,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 TheOnlineTricks. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</span>
+      <span>© 2026 The Online Tricks. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</span>
       <div class="trust-badges">
         <span><svg class="icon"><use href="icons.svg#i-shield"/></svg> Verified Daily</span>
         <span><svg class="icon"><use href="icons.svg#i-lock"/></svg> Secure Links</span>

@@ -1,77 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-       <loc>https://theonlinetricks.com/</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
+    <loc>https://theonlinetricks.com/404.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/index.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/about.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/deals.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/advertise.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/about.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/affiliate-disclosure.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/deal-wireless-headphones.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/blog-air-fryer-vs-otg.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/deal-air-fryer.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/blog-buying-refurbished-electronics.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/deal-smartwatch.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/blog-laptop-battery-life.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/deal-skincare-set.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/blog-protect-shopping-accounts-fraud.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/advertise.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/blog-smartphone-settings-to-change.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/contact.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/blog-smartphone-upgrade-signs.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/privacy-policy.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/blog-spot-fake-discounts.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-       <loc>https://theonlinetricks.com/affiliate-disclosure.html</loc>
-       <lastmod>2026-07-18T06:38:06+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://theonlinetricks.com/blog-ssd-vs-hdd.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/blog-warranty-vs-extended-warranty.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/blog-wired-vs-wireless-earbuds.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/blog.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/category-beauty.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/category-books.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/category-electronics.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/category-fashion.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/category-gift-cards.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/category-home-kitchen.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/category-movies-music.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/category-software-apps.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/category-wearables.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/contact.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-air-fryer.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-amazon-gift-card.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-antivirus-vpn.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-bluetooth-speaker.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-book-bundle.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-running-shoes.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-skincare-set.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-smartwatch.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-streaming-subscription.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deal-wireless-headphones.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/deals.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/privacy-policy.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/reviews.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theonlinetricks.com/terms.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.5</priority>
   </url>
 </urlset>
