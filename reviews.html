@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>(function(){var t=localStorage.getItem('tot-theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WBLXX64VE"></script>
 <script>
@@ -36,6 +37,7 @@
     </nav>
     <div class="header-actions">
       <button class="icon-btn search-toggle" aria-label="Search site" type="button"><svg class="icon"><use href="icons.svg#i-search"/></svg></button>
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode" type="button"><svg class="icon theme-icon-sun"><use href="icons.svg#i-sun"/></svg><svg class="icon theme-icon-moon" style="display:none;"><use href="icons.svg#i-moon"/></svg></button>
       <a href="index.html#channels" class="icon-btn" aria-label="Join channel"><svg class="icon"><use href="icons.svg#i-plane"/></svg></a>
       <a href="index.html#channels" class="cta-btn">Join Free</a>
       <button class="menu-toggle" aria-label="Toggle menu"><span></span></button>
@@ -56,14 +58,20 @@
   <p>Full, honest breakdowns of products — separate from our time-sensitive deal posts and general blog guides.</p>
 </div>
 
-<div class="page-container" style="text-align:center;">
-  <p style="color:var(--slate);">We're just getting this section started — full-length reviews land here regularly. Check back soon, or follow our <a href="index.html#channels" class="inline-link">Telegram channel</a> to know the moment a new one goes up.</p>
-
-  <div class="cta-box">
-    <h2>Looking for today's deals instead?</h2>
-    <p>Our verified deal posts — with real pricing, pros &amp; cons, and honest recommendations — live on a separate page.</p>
-    <a href="deals.html" class="cta-link">Browse Deals</a>
+<div class="page-container" style="max-width:1100px;">
+  <div class="deal-grid" style="margin-top:10px;">
+    <div class="deal-card">
+      <a href="review-boat-rockerz-371.html" class="deal-thumb tinted">
+        <img src="product-headphones.png" alt="boAt Rockerz 371 Bluetooth Headphones">
+        <span class="deal-flag">Full Review</span>
+      </a>
+      <div class="deal-body">
+        <h3><a href="review-boat-rockerz-371.html">boAt Rockerz 371 — Two Weeks of Daily Use</a></h3>
+        <a href="review-boat-rockerz-371.html" class="deal-cta">Read Full Review</a>
+      </div>
+    </div>
   </div>
+  <p class="deal-note" style="text-align:center;">More full-length reviews land here regularly — follow our <a href="index.html#channels" class="inline-link">Telegram channel</a> to know the moment a new one goes up.</p>
 </div>
 
 <footer>

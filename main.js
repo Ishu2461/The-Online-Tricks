@@ -153,4 +153,56 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  // ---- Dark / light mode toggle ----
+  var themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    var sunIcon = themeToggle.querySelector('.theme-icon-sun');
+    var moonIcon = themeToggle.querySelector('.theme-icon-moon');
+
+    function updateToggleIcon() {
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (sunIcon) sunIcon.style.display = isDark ? 'none' : 'block';
+      if (moonIcon) moonIcon.style.display = isDark ? 'block' : 'none';
+    }
+    updateToggleIcon();
+
+    themeToggle.addEventListener('click', function () {
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('tot-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('tot-theme', 'dark');
+      }
+      updateToggleIcon();
+    });
+  }
+
+  // ---- Share widget ----
+  var shareWidget = document.querySelector('.share-widget');
+  if (shareWidget) {
+    var pageUrl = encodeURIComponent(window.location.href);
+    var pageTitle = encodeURIComponent(document.title);
+    var waLink = shareWidget.querySelector('.share-wa');
+    var xLink = shareWidget.querySelector('.share-x');
+    var fbLink = shareWidget.querySelector('.share-fb');
+    var liLink = shareWidget.querySelector('.share-li');
+    if (waLink) waLink.href = 'https://wa.me/?text=' + pageTitle + '%20' + pageUrl;
+    if (xLink) xLink.href = 'https://twitter.com/intent/tweet?text=' + pageTitle + '&url=' + pageUrl;
+    if (fbLink) fbLink.href = 'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl;
+    if (liLink) liLink.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + pageUrl;
+
+    var shareToggle = shareWidget.querySelector('.share-toggle');
+    if (shareToggle) {
+      shareToggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        shareWidget.classList.toggle('open');
+      });
+      document.addEventListener('click', function (e) {
+        if (!shareWidget.contains(e.target)) shareWidget.classList.remove('open');
+      });
+    }
+  }
 });
